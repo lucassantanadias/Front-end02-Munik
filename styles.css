@@ -1,0 +1,166 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C32020; /* Vermelho do G1 */
+    color: white;
+    padding: 0.625rem; /* 10px */
+}
+
+.header-left, .header-center{
+    display: flex;
+    align-items: center;
+}
+
+.header-center {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.news-logo {
+    font-size: 1.5rem; /* 24px */
+    font-weight: bold;
+    margin-left: 0.9375rem; /* 15px */
+}
+
+.news-category {
+    font-size: 1.375rem; /* 22px */
+    font-weight: bold;
+    margin-top: 0.9375rem;
+}
+
+
+.menu-icon {
+    font-size: 1.5rem; /* 24px */
+    margin-right: 0.625rem; /* 10px */
+}
+
+
+/* Estilo do subtítulo fora do header, se mantido */
+.news-subtitle {
+    background-color: #A71818;
+    padding: 0.3125rem; /* 5px */
+    font-size: 0.875rem; /* 14px */
+    font-weight: bold;
+    text-align: center;
+}
+
+.news-subtitle a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Conteúdo da notícia */
+.news-container {
+    max-width: 50rem; /* 800px → 50rem */
+    margin: 1.25rem auto; /* 20px → 1.25rem */
+    padding: 1.25rem; /* 20px → 1.25rem */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.news-meta {
+    font-size: 0.875rem; /* 14px → 0.875rem */
+    color: #666;
+    margin: 0.625rem 0; /* 10px → 0.625rem */
+}
+
+.news-meta a {
+    color: #666;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.875rem; /* Tamanho inicial ajustado para 30px → 1.875rem, legível e responsivo */
+    margin-bottom: 1rem; /* 16px → 1rem */
+    line-height: 1.3; /* Melhor legibilidade */
+    word-wrap: break-word; /* Garante que palavras longas quebrem em linhas */
+    overflow-wrap: break-word; /* Suporte adicional para quebras de texto */
+    letter-spacing: -0.025rem; /* Reduz o espaçamento entre letras, ajuste fino */
+}
+
+.news-content {
+    font-size: 1rem; /* 16px → 1rem (padrão) */
+}
+
+/* Vídeo */
+.video-container {
+    width: 80%;
+    max-width: 40rem; /* 640px → 40rem */
+    margin: 1.25rem auto; /* 20px → 1.25rem */
+    padding: 0.625rem; /* 10px → 0.625rem */
+    border-radius: 0.5rem; /* 8px → 0.5rem */
+}
+
+iframe {
+    width: 100%;
+    height: 22.5rem; /* 360px → 22.5rem */
+    border: none;
+}
+
+/* Botão CTA */
+.cta-button {
+    display: block;
+    width: 100%;
+    max-width: 18.75rem; /* 300px → 18.75rem */
+    margin: 1.25rem auto; /* 20px → 1.25rem */
+    text-align: center;
+    background-color: #C32020;
+    color: white;
+    padding: 0.9375rem; /* 15px → 0.9375rem */
+    border-radius: 0.3125rem; /* 5px → 0.3125rem */
+    font-size: 1.125rem; /* 18px → 1.125rem */
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #A71818;
+}
+
+/* Estilos padrão (telas grandes, como desktop) */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  nav, .search {
+    font-size: 16px;
+  }
+  
+  /* Telas pequenas (ex.: até 600px, como smartphones) */
+  @media (max-width: 37.5rem) { /* 600px */
+    header {
+      flex-direction: column; /* Empilha os elementos verticalmente */
+      align-items: flex-start;
+    }
+    nav, .search {
+      font-size: 14px; /* Reduz o texto */
+      width: 100%; /* Usa toda a largura disponível */
+    }
+  }
+  
+  /* Telas muito pequenas (ex.: até 375px, como iPhone 12 Pro) */
+  @media (max-width: 23.4375rem) { /* 375px */
+    nav, .search {
+      font-size: 12px; /* Texto ainda menor */
+      padding: 5px; /* Reduz espaçamento */
+    }
+  }
+  
+  /* Tablets (ex.: 768px e acima) */
+  @media (min-width: 48rem) { /* 768px */
+    header {
+      flex-direction: row; /* Volta ao horizontal */
+    }
+  }
